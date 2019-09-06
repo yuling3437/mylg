@@ -523,15 +523,15 @@ func routerChange(router, b string) bool {
 
 // Print prints out trace result in normal or terminal mode
 func (i *Trace) Print() {
-	if i.realTime {
-		if rep, err := i.TermUI(); err != nil {
-			fmt.Println(err.Error())
-		} else if rep != "" {
-			fmt.Println(rep)
-		}
-	} else {
-		i.PrintPretty()
-	}
+// 	if i.realTime {
+// 		if rep, err := i.TermUI(); err != nil {
+// 			fmt.Println(err.Error())
+// 		} else if rep != "" {
+// 			fmt.Println(rep)
+// 		}
+// 	} else {
+// 		i.PrintPretty()
+// 	}
 }
 
 // PrintPretty prints out trace result
